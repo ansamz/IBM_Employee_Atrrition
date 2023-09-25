@@ -1,0 +1,111 @@
+---
+title: "Machine Learning 1 - Assignment"
+author: "Annalena Kreischer, Ansam Zedan & Mélanie Bigler"
+date: "HS23"
+output: 
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float:
+    number_sections: yes
+    code_folding: hide
+  pdf_document:
+    toc: yes
+    toc_depth: '2'
+---
+
+```{r setup, include = FALSE, warning = FALSE}
+library(knitr)
+opts_chunk$set(
+  echo = TRUE,
+  eval = TRUE,
+  warning = FALSE,
+  message = FALSE)
+
+```
+
+\newpage
+
+# Management Summary
+
+add in the end
+
+# Introduction (Annalena)
+
+## Motivation (Annalena)
+
+what is the motivation
+
+## Goal
+
+what is the outcome?
+
+## Data source
+
+The data was used from this source:
+
+<https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset>
+
+# Data Preperation
+
+## Libraries
+
+```{r libraries}
+#all used lirbaries for this report
+library(readr)
+
+```
+
+## Loading data
+
+```{r loading_data}
+
+#set workin diretory to current file
+# setwd("../projectML")
+
+#loading total dataset
+d.full.attrition <- read.csv("../projectML/data/WA_Fn-UseC_-HR-Employee-Attrition.csv", 
+                             header = TRUE)
+str(d.full.attrition)
+
+
+#define set for training
+# d.train.attrition <- d.full.attrition
+
+  
+#define set for testing
+# d.test.attrition <- d.full.attrition
+  
+```
+
+## Define factors
+
+Which variables need to be set as factors?
+
+```{r setting_factors}
+
+```
+
+# Graphical Analysis
+
+What is data showing? Make some first easy visualizations
+
+# Linear Model
+
+# Generalised Linear Model with family set to Poisson
+
+# Generalised Linear Model with family set to Binomial
+
+# Generalised Additive Model
+
+# Neural Network
+
+# Support Vector Machine
+
+# Solution to an optimisation problem
+
+# Comparing Models
+
+# Conclusion
+
+## Learnings & Outlook
