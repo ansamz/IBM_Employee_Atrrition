@@ -46,7 +46,7 @@ The data was used from this source:
 
 <https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset>
 
-# Data Preperation
+# Data Preperation (Melanie)
 
 ## Libraries
 
@@ -78,7 +78,7 @@ str(d.full.attrition)
   
 ```
 
-## Define factors
+## Define factors 
 
 Which variables need to be set as factors?
 
@@ -90,22 +90,22 @@ Which variables need to be set as factors?
 
 What is data showing? Make some first easy visualizations
 
-# Linear Model
+# Linear Model (Ansam)
 
-# Generalised Linear Model with family set to Poisson
+# Generalised Linear Model with family set to Poisson (Annalena)
 
-# Generalised Linear Model with family set to Binomial
+# Generalised Linear Model with family set to Binomial (Melanie)
 
-# Generalised Additive Model
+# Generalised Additive Model (Ansam)
 
-# Neural Network
+# Neural Network (Annalena)
 
-# Support Vector Machine
+# Support Vector Machine (Melanie)
 
-# Solution to an optimisation problem
+# Solution to an optimisation problem (Ansam)
 
-# Comparing Models
+# Comparing Models (Annalena)
 
-# Conclusion
+# Conclusion (Melanie)
 
-## Learnings & Outlook
+## Learnings & Outlook (Ansam)
