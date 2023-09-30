@@ -25,18 +25,31 @@ missing_values
 
 # Distribution of the target variable (Attrition)
 ggplot(data, aes(x = Attrition)) +
-  geom_bar() +
+  geom_bar(fill = "#7393B3") +
   labs(title = "Attrition Distribution")
 #we can see from the plot that what we are trying to predict is imbalanced
 
 
 # Box plot for numeric features
+# here the features have a wide range of values and a lot of them are diminished 
+
 numeric_features <- data %>%
   select_if(is.numeric)
 numeric_features %>%
   pivot_longer(everything()) %>%
   ggplot(aes(x = name, y = value)) +
   geom_boxplot() +
+  labs(title = "Numeric Features")
+
+# that's why I applied log to see them better
+data2 <- data %>%
+  mutate(across(where(is.numeric), ~log(.)))
+numeric_features2 <- data2 %>%
+  select_if(is.numeric)
+numeric_features2 %>%
+  pivot_longer(everything()) %>%
+  ggplot(aes(x = name, y = value)) +
+  geom_boxplot(fill = "#7393B3") +
   labs(title = "Numeric Features")
 
 
